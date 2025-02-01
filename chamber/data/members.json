@@ -1,0 +1,36 @@
+{
+    "members": [
+        {
+            "name": "Kampala Bakery",
+            "address": "123 Main Street, Kampala",
+            "phone": "+256 712 345 678",
+            "website": "https://kampala-bakery.com",
+            "image": "bakery.jpg",
+            "membership": 1
+        },
+        {
+            "name": "Nile Tech Solutions",
+            "address": "456 Tech Park, Entebbe",
+            "phone": "+256 700 123 456",
+            "website": "https://niletech.com",
+            "image": "tech.jpg",
+            "membership": 3
+        },
+        {
+            "name": "Kampala sadfghjklgdrs",
+            "address": "123 Main Street, Kampala",
+            "phone": "+256 712 345 678",
+            "website": "https://kampala-bakery.com",
+            "image": "bakery.jpg",
+            "membership": 1
+        },
+        {
+            "name": "Nile Tech asdfghjfdfghj",
+            "address": "456 Tech Park, Entebbe",
+            "phone": "+256 700 123 456",
+            "website": "https://niletech.com",
+            "image": "tech.jpg",
+            "membership": 3
+        }
+    ]
+}

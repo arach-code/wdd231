@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uganda Chamber of Commerce</title>
+    <meta name="description" content="Promoting local businesses and community growth in Uganda.">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <img src="images/logo.jpg" alt="Chamber Logo" class="logo">
+            <h1>Uganda Chamber of Commerce</h1>
+            <nav>
+                <button id="hamburger">☰</button>
+                <ul id="nav-menu">
+                    <li><a href="../chamber home/index.html" class="active">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="#">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="images/hero-image.jpg" alt="Uganda Cityscape" class="hero-img">
+        <div class="hero-overlay">
+            <h2>Empowering Local Businesses</h2>
+            <button onclick="window.location.href='join.html'">Join Us</button>
+        </div>
+    </section>
+
+    <!-- Weather Card -->
+    <section class="weather-card">
+        <h3>Current Weather</h3>
+        <div id="weather-info">
+            <p>Loading...</p>
+        </div>
+    </section>
+
+    <!-- Business Spotlights -->
+    <section class="spotlights">
+        <h2>Featured Businesses</h2>
+        <div class="spotlight-grid" id="spotlight-grid">
+            <!-- Dynamically populated via JavaScript -->
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <img src="logo.png" alt="Chamber Logo" class="logo">
+            <p>© 2023 Uganda Chamber of Commerce</p>
+            <p>Contact: info@ugandachamber.org</p>
+            <div class="social">
+                <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                <a href="#"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+                <a href=""></a>
+                <p></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script type="module">
+        import fetchData from '/chamber/scripts/fetchData.js';
+        const data = await fetchData();
+
+        let rootElement = document.getElementById("spotlight-grid")
+
+        data.members.map(member => {
+            let businessElement = document.createElement("div")
+
+            let namePara = document.createElement("h3")
+            namePara.innerText = member.name
+
+            let addressPara = document.createElement("p")
+            addressPara.innerText = member.address
+
+            let contactPara = document.createElement("p")
+            contactPara.innerText = member.phone
+
+            let website = document.createElement("a")
+            website.href = member.website
+            website.innerText="website link"
+
+
+
+            businessElement.appendChild(namePara)
+            businessElement.appendChild(addressPara)
+            businessElement.appendChild(contactPara)
+            businessElement.appendChild(website)
+            rootElement.appendChild(businessElement)
+        });
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+:root {
+    --primary-color: #003366; /* Dark Blue */
+    --secondary-color: #FFA500; /* Orange */
+    --background-color: #F5F5F5; /* Light Gray */
+    --text-color: #333333; /* Dark Gray */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
