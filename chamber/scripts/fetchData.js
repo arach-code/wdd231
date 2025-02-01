@@ -1,6 +1,6 @@
 
 const fetchData = async () => {
-    let results = await fetch("data/members.json")
+    let results = await fetch("https://arach-code.github.io/wdd231/chamber/data/members.json")
     return results.json();
 }
 
