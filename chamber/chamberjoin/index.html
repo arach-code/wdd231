@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership Application - Uganda Chamber of Commerce</title>
+    <meta name="description" content="Apply for membership with the Uganda Chamber of Commerce to promote your business and community growth.">
+    <link rel="stylesheet" href="styles/styel.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <section>
+                <img src="images/logo.jpg" alt="Chamber Logo" class="logo">
+                <h1>Uganda Chamber of Commerce</h1>
+            </section>
+            <nav>
+                <button id="hamburger">☰</button>
+                <ul id="nav-menu">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <h1>Chamber of Commerce Membership Application</h1>
+        <form action="thankyou.html" method="get">
+            <label>
+                First Name:
+                <input type="text" name="firstName" required autocomplete="given-name" title="Enter your first name">
+            </label>
+            <label>
+                Last Name:
+                <input type="text" name="lastName" required autocomplete="family-name" title="Enter your last name">
+            </label>
+            <label>
+                Organizational Title:
+                <input type="text" name="organizationTitle" pattern="[A-Za-z-\s]{7,}" autocomplete="organization-title" title="Enter your title (min 7 characters)">
+            </label>
+            <label>
+                Email Address:
+                <input type="email" name="email" required autocomplete="email" placeholder="example@email.com" title="Enter a valid email">
+            </label>
+            <label>
+                Mobile Phone Number:
+                <input type="tel" name="phone" required autocomplete="tel" title="Enter your mobile number">
+            </label>
+            <label>
+                Business/Organization Name:
+                <input type="text" name="organization" required autocomplete="organization" title="Enter your organization's name">
+            </label>
+            <label>
+                Membership Level:
+                <select name="membershipLevel" required>
+                    <option value="">Select a Membership Level</option>
+                    <option value="NP">NP Membership (No Fee)</option>
+                    <option value="Bronze">Bronze Membership</option>
+                    <option value="Silver">Silver Membership</option>
+                    <option value="Gold">Gold Membership</option>
+                </select>
+            </label>
+            <label>
+                Business Description:
+                <textarea name="businessDescription" title="Provide a brief description" required></textarea>
+            </label>
+            <input type="hidden" name="timestamp" id="timestamp">
+            <input type="submit" value="Apply for Membership">
+        </form>
+
+        <!-- Membership Info Cards -->
+        <section id="membership-info">
+            <div class="card" onclick="openModal('np-modal')">NP Membership</div>
+            <div class="card" onclick="openModal('bronze-modal')">Bronze Membership</div>
+            <div class="card" onclick="openModal('silver-modal')">Silver Membership</div>
+            <div class="card" onclick="openModal('gold-modal')">Gold Membership</div>
+        </section>
+
+        <!-- Modals -->
+        <div id="np-modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('np-modal')">&times;</span>
+                <h2>NP Membership Benefits</h2>
+                <p>No fee, networking opportunities, community engagement.</p>
+            </div>
+        </div>
+        <div id="bronze-modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('bronze-modal')">&times;</span>
+                <h2>Bronze Membership Benefits</h2>
+                <p>Includes event discounts and a business directory listing.</p>
+            </div>
+        </div>
+        <div id="silver-modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('silver-modal')">&times;</span>
+                <h2>Silver Membership Benefits</h2>
+                <p>Enhanced advertising opportunities and premium directory listing.</p>
+            </div>
+        </div>
+        <div id="gold-modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('gold-modal')">&times;</span>
+                <h2>Gold Membership Benefits</h2>
+                <p>Exclusive event invitations, spotlight positions, and maximum exposure.</p>
+            </div>
+        </div>
+    <section class="thank-you-container">
+
+        <section class="mission-section">
+            
+            <p>
+                We encourage you to review the details by clicking the Levels of Membership button to see which benefit level is right for you.
+
+                Please fill out the How to Join form and receive more information, including pricing. One of our team members will follow-up with you promptly.
+                
+                You can also schedule a Zoom meeting with Membership Department.
+            </p>
+        </section>
+      
+
+        <!-- Thank You Section -->
+        <section class="thank-you-container" id="thank-you" style="display: none;">
+            <h2>Thank You for Your Application!</h2>
+            <p>We appreciate your interest in joining the Uganda Chamber of Commerce. Below is the information you provided:</p>
+            <ul class="applicant-info">
+                <li><strong>First Name:</strong> <span id="display-firstName"></span></li>
+                <li><strong>Last Name:</strong> <span id="display-lastName"></span></li>
+                <li><strong>Email Address:</strong> <span id="display-email"></span></li>
+                <li><strong>Mobile Phone Number:</strong> <span id="display-phone"></span></li>
+                <li><strong>Business/Organization Name:</strong> <span id="display-organization"></span></li>
+                <li><strong>Date Submitted:</strong> <span id="display-timestamp"></span></li>
+            </ul>
+        </section>
+    </main>
+    </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>© 2025 Uganda Chamber of Commerce</p>
+            <p>Contact: info@ugandachamber.org |abel's</p>
+            <div class="social">
+                <a href="#"><img src="images/facebook-icon.png" alt="Facebook"></a>
+                <a href="#"><img src="images/linkedin logo.png" alt="LinkedIn"></a>
+                <a href="#"><img src="images/twiter icon.png" alt="Twitter"></a>
+                <a href="#"><img src="images/whatsapp-icon.png" alt="WhatsApp"></a>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- JavaScript -->
+    <script>
+        
+        document.addEventListener('DOMContentLoaded', () => {
+            const form = document.getElementById('membership-form');
+            const thankYouSection = document.getElementById('thank-you');
+
+            form.addEventListener('submit', (event) => {
+                event.preventDefault(); 
+
+                // Get form data
+                const formData = new FormData(form);
+                const applicantData = {
+                    firstName: formData.get('firstName'),
+                    lastName: formData.get('lastName'),
+                    email: formData.get('email'),
+                    phone: formData.get('phone'),
+                    organization: formData.get('organization'),
+                    timestamp: new Date().toLocaleString()
+                };
+
+                
+                thankYouSection.style.display = 'block';
+
+                
+                document.getElementById('display-firstName').textContent = applicantData.firstName;
+                document.getElementById('display-lastName').textContent = applicantData.lastName;
+                document.getElementById('display-email').textContent = applicantData.email;
+                document.getElementById('display-phone').textContent = applicantData.phone;
+                document.getElementById('display-organization').textContent = applicantData.organization;
+                document.getElementById('display-timestamp').textContent = applicantData.timestamp;
+
+                
+                form.style.display = 'none';
+            });
+
+            
+        
+            function openModal(modalId) {
+                document.getElementById(modalId).style.display = 'block';
+            }
+
+            // Function to close modals
+            function closeModal(modalId) {
+                document.getElementById(modalId).style.display = 'none';
+            }
+
+            
+            window.openModal = openModal;
+            window.closeModal = closeModal;
+        });
+    </script>
+    
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Gabbi's Coffee Place - Freshly brewed coffee and delightful treats in Kampala, Uganda." />
+  <title>Gabbi's Coffee Place</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/base.css" />
+  <link rel="stylesheet" href="styles/large.css" media="(min-width: 1024px)" />
+  
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <nav>
+        <div class="logo">Coffee To GO</div>
+        <button class="menu-toggle" aria-label="Toggle navigation menu">☰</button>
+        <ul class="nav-links">
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#location">Location</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#order" class="order-button">Order Menu</a></li> <!-- New Order Menu Button -->
+        </ul>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" aria-labelledby="hero-heading">
+    <img src="images/tired-african-barista-holding-cup-with-coffee-while-leaning-counter-coffee-shop-looking-camera-with-happy-look.jpg" alt="Barista holding a cup of coffee with a smile" />
+    <div class="hero-content">
+      <h1 id="hero-heading">Freshly Brewed, Just for You</h1>
+      <p>Discover our handcrafted coffee and delightful treats.</p>
+      <a href="#menu" class="cta">View Menu</a>
+    </div>
+  </section>
+
+  <!-- Coffee Menu Section -->
+  <section id="menu" class="coffee-menu" aria-labelledby="menu-heading">
+    <h2 id="menu-heading" class="section-heading">Our Coffee Menu</h2>
+    <div class="coffee-grid">
+      <!-- Espresso -->
+      <div class="coffee-item">
+        <div class="coffee-card">
+          <div class="coffee-front">
+            <img src="images/espresso-dark-background-steam-rises-coffee-coffee-breakfast-italian-cafe-shop-vertical-shot-selective-focus_166373-2022.jpg" alt="Espresso" />
+            <div class="coffee-info">
+              <h3>Espresso</h3>
+              <span class="price">$3.00</span>
+            </div>
+          </div>
+          <div class="coffee-back">
+            <p>Espresso is the ultimate concentrated coffee—a small, potent shot that packs pure energy and bold, 
+                intense flavor into every sip. It’s made by forcing hot water through finely ground coffee under high 
+                pressure, which extracts a rich, full-bodied flavor and creates that signature layer of crema on top. 
+                This makes it the perfect way to kickstart your day, whether you enjoy it on its own or as the base for your 
+                favorite coffee drink like a latte or cappuccino.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cappuccino -->
+      <div class="coffee-item">
+        <div class="coffee-card">
+          <div class="coffee-front">
+            <img src="images/Cappuccino.jpeg" alt="Cappuccino" />
+            <div class="coffee-info">
+              <h3>Cappuccino</h3>
+              <span class="price">$4.00</span>
+            </div>
+          </div>
+          <div class="coffee-back">
+            <p>Cappuccino: A perfect blend of espresso, steamed milk, and airy foam for a creamy delight.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Latte -->
+      <div class="coffee-item">
+        <div class="coffee-card">
+          <div class="coffee-front">
+            <img src="images/latte-small.jpg" alt="Latte" />
+            <div class="coffee-info">
+              <h3>Latte</h3>
+              <span class="price">$4.50</span>
+            </div>
+          </div>
+          <div class="coffee-back">
+            <p>Latte: A milk-based coffee drink made with espresso and steamed milk, creating a smooth, creamy texture and a 
+                gentle espresso kick that warms you up.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Americano -->
+      <div class="coffee-item">
+        <div class="coffee-card">
+          <div class="coffee-front">
+            <img src="images/americano.jpeg" alt="Americano" />
+            <div class="coffee-info">
+              <h3>Americano</h3>
+              <span class="price">$3.50</span>
+            </div>
+          </div>
+          <div class="coffee-back">
+            <p>Americano: A shot of espresso diluted with hot water, offering a milder, 
+                aromatic coffee that's lighter than pure espresso.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Why Choose Us Section -->
+<section id="why-us" class="why-us" aria-labelledby="why-us-heading">
+    <h2 id="why-us-heading" class="section-heading">Why Choose Us?</h2>
+    <div class="why-us-grid">
+      <div class="why-us-item">
+        <i class="fas fa-coffee"></i>
+        <h3>Premium Quality Beans</h3>
+        <p>We source our coffee beans from the finest farms around the world to ensure the best flavor.</p>
+      </div>
+      <div class="why-us-item">
+        <i class="fas fa-heart"></i>
+        <h3>Made with Love</h3>
+        <p>Every cup is brewed with care and passion to give you the perfect coffee experience.</p>
+      </div>
+      <div class="why-us-item">
+        <i class="fas fa-leaf"></i>
+        <h3>Eco-Friendly</h3>
+        <p>We are committed to sustainability, using eco-friendly packaging and practices.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+<section id="testimonials" class="testimonials" aria-labelledby="testimonials-heading">
+    <h2 id="testimonials-heading" class="section-heading">What Our Customers Say</h2>
+    <div class="testimonials-grid">
+      <div class="testimonial-item">
+        <img src="images/customer1.jpg" alt="Customer 1" class="testimonial-img" />
+        <p>"The best coffee I've ever had! The atmosphere is cozy, and the staff is super friendly."</p>
+        <span class="testimonial-name">— Jane Doe</span>
+      </div>
+      <div class="testimonial-item">
+        <img src="images/customer2.jpg" alt="Customer 2" class="testimonial-img" />
+        <p>"I love their cappuccino! It's always perfectly brewed and served with a smile."</p>
+        <span class="testimonial-name">— John Smith</span>
+      </div>
+      <div class="testimonial-item">
+        <img src="images/customer3.jpg" alt="Customer 3" class="testimonial-img" />
+        <p>"Gabbi's Coffee Place is my go-to spot for a relaxing coffee break. Highly recommended!"</p>
+        <span class="testimonial-name">— Mary Johnson</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+<section id="gallery" class="gallery" aria-labelledby="gallery-heading">
+    <h2 id="gallery-heading" class="section-heading">Our Gallery</h2>
+    <div class="gallery-grid">
+      <img src="images/gallery1.jpg" alt="Coffee Shop Interior" />
+      <img src="images/gallery2.jpg" alt="Barista Making Coffee" />
+      <img src="images/gallery3.jpg" alt="Coffee and Pastries" />
+      <img src="images/gallery4.jpg" alt="Coffee Beans" />
+      <img src="images/gallery5.jpg" alt="Latte Art" />
+      <img src="images/gallery6.jpg" alt="Cozy Seating Area" />
+    </div>
+  </section>
+
+  <!-- Newsletter Section -->
+<section id="newsletter" class="newsletter" aria-labelledby="newsletter-heading">
+    <h2 id="newsletter-heading" class="section-heading">Subscribe to Our Newsletter</h2>
+    <p>Stay updated with our latest offers, events, and coffee tips!</p>
+    <form class="newsletter-form">
+      <input type="email" placeholder="Enter your email" required />
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
+
+     <!-- Spotlights -->
+     <section class="spotlights">
+      <h2>Featured Businesses</h2>
+      <div class="spotlight-grid" id="spotlight-grid">
+          <!-- Dynamically populated via JavaScript -->
+      </div>
+  </section>
+
+</section>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 Gabbi's Coffee Place - Garden City Mall, Kampala</p>
+      <p>
+        Email: <a href="mailto:info@gabbiscoffee.org">info@gabbiscoffee.org</a> | Tel:
+        +256787334932
+      </p>
+      <div class="social">
+        <a href="#"><img src="images/facebook-icon.png" alt="Facebook"></a>
+        <a href="#"><img src="images/linkedin logo.png" alt="LinkedIn"></a>
+        <a href="#"><img src="images/twitter_5969020.png" alt="Twitter"></a>
+        <a href="#"><img src="images/whatsapp.png" alt="WhatsApp"></a>
+        <a href="#"><img src="images/tik-tok_4782345.png" alt="tiktok"></a>
+        <a href="#"><img src="images/youtube.png" alt="youtube"></a>
+    </div>
+    </div>
+  </footer>
+  <script defer src="script.js"></script> 
+  <!-- JavaScript -->
+  <script>
+        
+    document.addEventListener('DOMContentLoaded', () => {
+        const form = document.getElementById('membership-form');
+        const thankYouSection = document.getElementById('thank-you');
+
+        form.addEventListener('submit', (event) => {
+            event.preventDefault(); 
+
+            // Get form data
+            const formData = new FormData(form);
+            const applicantData = {
+                firstName: formData.get('firstName'),
+                lastName: formData.get('lastName'),
+                email: formData.get('email'),
+                phone: formData.get('phone'),
+                organization: formData.get('organization'),
+                timestamp: new Date().toLocaleString()
+            };
+
+            
+            thankYouSection.style.display = 'block';
+
+            
+            document.getElementById('display-firstName').textContent = applicantData.firstName;
+            document.getElementById('display-lastName').textContent = applicantData.lastName;
+            document.getElementById('display-email').textContent = applicantData.email;
+            document.getElementById('display-phone').textContent = applicantData.phone;
+            document.getElementById('display-organization').textContent = applicantData.organization;
+            document.getElementById('display-timestamp').textContent = applicantData.timestamp;
+
+            
+            form.style.display = 'none';
+        });
+
+        
+    
+        function openModal(modalId) {
+            document.getElementById(modalId).style.display = 'block';
+        }
+
+        // Function to close modals
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = 'none';
+        }
+
+        
+        window.openModal = openModal;
+        window.closeModal = closeModal;
+    });
+</script>
+
+</body>
+</html>
+

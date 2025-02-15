@@ -1,0 +1,145 @@
+/* Large Screen Styles */
+@media (min-width: 1024px) {
+    /* Header */
+    header {
+      padding: 1.5rem 4rem;
+    }
+  
+    .logo {
+      font-size: 2rem;
+    }
+  
+    .nav-links {
+      gap: 2.5rem;
+    }
+  
+    .nav-links li a {
+      font-size: 1.1rem;
+    }
+  
+    /* Hero Section */
+    .hero h1 {
+      font-size: 4rem;
+    }
+  
+    .hero p {
+      font-size: 1.5rem;
+    }
+  
+    .cta {
+      font-size: 1.1rem;
+      padding: 1rem 2rem;
+    }
+  
+    /* Coffee Menu Section */
+    .coffee-menu {
+      padding: 6rem 4rem;
+    }
+  
+    .section-heading {
+      font-size: 3rem;
+    }
+  
+    .coffee-grid {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 3rem;
+    }
+  
+    .coffee-card {
+      height: 350px;
+    }
+  
+    .coffee-info h3 {
+      font-size: 1.75rem;
+    }
+  
+    .price {
+      font-size: 1.5rem;
+    }
+  
+    .coffee-back p {
+      font-size: 1.1rem;
+    }
+  
+    /* Why Choose Us Section */
+    .why-us {
+      padding: 6rem 4rem;
+    }
+  
+    .why-us-item {
+      padding: 3rem;
+    }
+  
+    .why-us-item i {
+      font-size: 2.5rem;
+    }
+  
+    .why-us-item h3 {
+      font-size: 1.75rem;
+    }
+  
+    .why-us-item p {
+      font-size: 1.1rem;
+    }
+  
+    /* Testimonials Section */
+    .testimonials {
+      padding: 6rem 4rem;
+    }
+  
+    .testimonials-grid {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 3rem;
+    }
+  
+    .testimonial-img {
+      width: 100px;
+      height: 100px;
+    }
+  
+    .testimonial-item p {
+      font-size: 1.1rem;
+    }
+  
+    .testimonial-name {
+      font-size: 1.2rem;
+    }
+  
+    /* Gallery Section */
+    .gallery {
+      padding: 6rem 4rem;
+    }
+  
+    .gallery-grid {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+  
+    .gallery-grid img {
+      height: 250px;
+    }
+  
+    /* Newsletter Section */
+    .newsletter {
+      padding: 6rem 4rem;
+    }
+  
+    .newsletter-form input {
+      width: 400px;
+      font-size: 1.1rem;
+    }
+  
+    .newsletter-form button {
+      font-size: 1.1rem;
+      padding: 1rem 2rem;
+    }
+  
+    /* Social Media Section */
+    .social-media {
+      padding: 6rem 4rem;
+    }
+  
+    .social-links a {
+      font-size: 2.5rem;
+    }
+  }
