@@ -1,10 +1,10 @@
-/* General Styles */
+
 body {
     font-family: 'Lato', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #F5E6D3; /* Cream */
-    color: #6F4E37; /* Main Brown */
+    background-color: #F5E6D3; 
+    color: #6F4E37; 
   }
   
   h1, h2 {
@@ -16,7 +16,7 @@ body {
     color: #6F4E37;
   }
   
-  /* Header */
+  
   header {
     background-color: #6F4E37;
     color: #F5E6D3;
@@ -50,15 +50,15 @@ body {
     cursor: pointer;
   }
   
-  /* Hero Section */
+  
   .hero {
     text-align: center;
     padding: 2rem;
-    background-color: #8AAE5C; /* Accent Green */
+    background-color: #8AAE5C; 
     color: #F5E6D3;
   }
   
-  /* Events Section */
+  
   .events {
     display: flex;
     flex-wrap: wrap;
@@ -94,7 +94,7 @@ body {
     background-color: #6F4E37;
   }
   
-  /* Footer */
+  
   footer {
     text-align: center;
     padding: 1rem;
@@ -111,7 +111,7 @@ body {
     margin: 0 0.5rem;
   }
   
-  /* Mobile Responsiveness */
+  
   @media (max-width: 768px) {
     .nav-links {
       display: none;

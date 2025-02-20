@@ -1,5 +1,4 @@
 
-   /* Header */
   header {
     background-color: #6F4E37;
     color: #F5E6D3;
@@ -61,7 +60,7 @@
     padding: 0 20px;
   }
   
-  /* Contact Form */
+  
   .contact-form {
     background: #FFFFFF;
     padding: 2rem;
@@ -110,7 +109,7 @@
     background-color: #6F4E37; 
   }
   
-  /* Contact Info */
+  
   .contact-info {
     background: #FFFFFF;
     padding: 2rem;
@@ -142,7 +141,7 @@
     margin: 0;
   }
 
-    /* Footer */
+    
     footer {
         text-align: center;
         padding: 1rem;
@@ -167,7 +166,7 @@
         }
       
   
-  /* Responsive Design */
+  
   @media (max-width: 768px) {
     .contact-grid {
       grid-template-columns: 1fr;

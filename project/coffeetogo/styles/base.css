@@ -1,6 +1,4 @@
-/* ======================
-   Base Styles & Reset
-   ====================== */
+
    * {
     margin: 0;
     padding: 0;
@@ -10,13 +8,13 @@
   body {
     font-family: 'Lato', sans-serif;
     line-height: 1.6;
-    color: #6F4E37; /* Main Brown */
-    background-color: #F5E6D3; /* Cream */
+    color: #6F4E37; 
+    background-color: #F5E6D3; 
   }
   
   h1, h2, h3 {
     font-family: 'Playfair Display', serif;
-    color: #6F4E37; /* Main Brown */
+    color: #6F4E37; 
   }
   
   a {
@@ -36,11 +34,9 @@
     padding: 0 20px;
   }
   
-  /* ======================
-     Header & Navigation
-     ====================== */
+  
   header {
-    background-color: #6F4E37; /* Main Brown */
+    background-color: #6F4E37; 
     padding: 1rem 0;
     position: fixed;
     width: 100%;
@@ -52,7 +48,7 @@
   .logo {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #F5E6D3; /* Cream */
+    color: #F5E6D3; 
   }
   
   nav {
@@ -65,7 +61,7 @@
     display: flex;
     align-items: center;
     gap: 2rem;
-    margin-left: auto; /* Pushes group to the right */
+    margin-left: auto; 
   }
   
   .nav-links {
@@ -76,17 +72,17 @@
   }
   
   .nav-links a {
-    color: #F5E6D3; /* Cream */
+    color: #F5E6D3; 
     font-weight: 700;
     transition: color 0.3s ease;
   }
   
   .nav-links a:hover {
-    color: #8AAE5C; /* Accent Green */
+    color: #8AAE5C; 
   }
   
   .order-icon {
-    color: #F5E6D3; /* Cream */
+    color: #F5E6D3; 
     font-size: 1.5rem;
     transition: color 0.3s ease;
     display: flex;
@@ -94,26 +90,25 @@
     justify-content: center;
     padding: 0.5rem;
     border-radius: 50%;
-    background-color: #8AAE5C; /* Accent Green */
+    background-color: #8AAE5C; 
     width: 40px;
     height: 40px;
   }
   
   .order-icon:hover {
-    color: #6F4E37; /* Main Brown */
-    background-color: #F5E6D3; /* Cream */
+    color: #6F4E37; 
+    background-color: #F5E6D3; 
   }
   
   .menu-toggle {
     display: none;
     background: none;
     border: none;
-    color: #F5E6D3; /* Cream */
+    color: #F5E6D3; 
     font-size: 1.5rem;
     cursor: pointer;
   }
   
-/* Hero Section */
 .hero {
   position: relative;
   height: 100vh;
@@ -157,7 +152,7 @@
   align-items: center;
   text-align: center;
   padding: 2rem;
-  color: #F5E6D3; /* Cream */
+  color: #F5E6D3; 
 }
 
 .hero-overlay h2 {
@@ -168,8 +163,8 @@
 }
 
 .hero-overlay button {
-  background-color: #8AAE5C; /* Accent Green */
-  color: #F5E6D3; /* Cream */
+  background-color: #8AAE5C; 
+  color: #F5E6D3; 
   border: none;
   padding: 1rem 2rem;
   border-radius: 5px;
@@ -181,10 +176,9 @@
 }
 
 .hero-overlay button:hover {
-  background-color: #6F4E37; /* Main Brown */
+  background-color: #6F4E37; 
 }
 
-/* Slide Navigation Dots */
 .slide-nav {
   position: absolute;
   bottom: 2rem;
@@ -199,17 +193,17 @@
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background-color: rgba(245, 230, 211, 0.5); /* Cream with 50% opacity */
+  background-color: rgba(245, 230, 211, 0.5); 
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .slide-dot.active {
-  background-color: #F5E6D3; /* Cream */
+  background-color: #F5E6D3; 
   transform: scale(1.2);
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
   .hero-overlay h2 {
       font-size: 2rem;
@@ -242,19 +236,17 @@
   }
 }
   
-  /* ======================
-     Coffee Menu Section
-     ====================== */
+ 
   .coffee-menu {
     padding: 4rem 0;
-    background-color: #F5E6D3; /* Cream */
+    background-color: #F5E6D3; 
   }
   
   .section-heading {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 3rem;
-    color: #6F4E37; /* Main Brown */
+    color: #6F4E37;
   }
   
   .coffee-grid {
@@ -311,7 +303,7 @@
   
   .coffee-info .price {
     font-size: 1.2rem;
-    color: #8AAE5C; /* Accent Green */
+    color: #8AAE5C; 
   }
   
   .coffee-back {
@@ -320,8 +312,8 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #6F4E37; /* Main Brown */
-    color: #F5E6D3; /* Cream */
+    background-color: #6F4E37;
+    color: #F5E6D3; 
     transform: rotateY(180deg);
     padding: 1rem;
     box-sizing: border-box;
@@ -334,14 +326,11 @@
   .coffee-item:hover .coffee-back {
     transform: rotateY(0deg);
   }
-  
-  /* ======================
-     Why Choose Us Section
-     ====================== */
+ 
   .why-us {
-    background-color: #8AAE5C; /* Accent Green */
+    background-color: #8AAE5C;
     padding: 4rem 0;
-    color: #F5E6D3; /* Cream */
+    color: #F5E6D3; 
   }
   
   .why-us-grid {
@@ -368,12 +357,10 @@
     margin-bottom: 1rem;
   }
   
-  /* ======================
-     Testimonials Section
-     ====================== */
+  
   .testimonials {
     padding: 4rem 0;
-    background-color: #F5E6D3; /* Cream */
+    background-color: #F5E6D3; 
   }
   
   .testimonials-grid {
@@ -406,7 +393,7 @@
   
   .testimonial-name {
     font-weight: bold;
-    color: #8AAE5C; /* Accent Green */
+    color: #8AAE5C; 
   }
   
   
@@ -435,7 +422,7 @@
   }
   
   .newsletter-form button {
-    color: #e3860d; /* Cream */
+    color: #e3860d; 
     border: none;
     padding: 0.75rem 2rem;
     border-radius: 5px;
@@ -444,17 +431,15 @@
   }
   
   .newsletter-form button:hover {
-    background-color: #F5E6D3; /* Cream */
-    color: #6F4E37; /* Main Brown */
+    background-color: #F5E6D3;
+    color: #6F4E37; 
   }
   
-  /* ======================
-     Footer Section
-     ====================== */
+  
   footer {
-    background-color: #6F4E37; /* Main Brown */
+    background-color: #6F4E37; 
     padding: 3rem 0;
-    color: #F5E6D3; /* Cream */
+    color: #F5E6D3; 
     text-align: center;
   }
   
@@ -467,17 +452,15 @@
   
   .social a {
     font-size: 1.5rem;
-    color: #F5E6D3; /* Cream */
+    color: #F5E6D3; 
     transition: color 0.3s ease;
   }
   
   .social a:hover {
-    color: #8AAE5C; /* Accent Green */
+    color: #8AAE5C; 
   }
   
-  /* ======================
-     Responsive Design
-     ====================== */
+  
   @media (max-width: 768px) {
     .menu-toggle {
       display: block;
@@ -490,7 +473,7 @@
       left: -100%;
       width: 80%;
       height: 100vh;
-      background-color: #6F4E37; /* Main Brown */
+      background-color: #6F4E37; 
       flex-direction: column;
       padding: 6rem 2rem;
       transition: left 0.3s ease;
