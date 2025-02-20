@@ -204,22 +204,7 @@
 }
 
 
-@media (max-width: 768px) {
-  .hero-overlay h2 {
-      font-size: 2rem;
-      margin-bottom: 1.5rem;
-  }
-  
-  .hero-overlay button {
-      padding: 0.75rem 1.5rem;
-      font-size: 1rem;
-  }
-  
-  .slide-dot {
-      width: 10px;
-      height: 10px;
-  }
-}
+
 
 @media (max-width: 480px) {
   .hero-overlay h2 {
