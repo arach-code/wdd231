@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events - Gabbi's Coffee Place</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <div class="logo">Coffee To GO</div>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <!-- Add more links if needed -->
+          </ul>
+          <a href="#menu" class="order-icon" aria-label="Order Now">
+            <i class="fas fa-shopping-cart"></i>
+          </a>
+          <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </nav>
+      </div>
+    </header>
+  <main>
+    <section class="hero">
+      <h1>Upcoming Events</h1>
+      <p>Join us for exciting coffee experiences!</p>
+    </section>
+
+    <section class="events">
+      <div class="event-card">
+        <img src="images/testing event 1.webp" alt="Coffee Tasting Event">
+        <h2>Coffee Tasting Night</h2>
+        <p>Date: October 25, 2025</p>
+        <p>Time: 6:00 PM - 8:00 PM</p>
+        <p>Discover the flavors of our new seasonal blends.</p>
+        <button class="cta-button" onclick="registerEvent('Coffee Tasting Night')">Register Now</button>
+      </div>
+
+      <div class="event-card">
+        <img src="images/music coffee shope.jpeg" alt="Live Music Event">
+        <h2>Live Music Evening</h2>
+        <p>Date: November 10, 2025</p>
+        <p>Time: 7:00 PM - 9:00 PM</p>
+        <p>Enjoy acoustic performances with your favorite coffee.</p>
+        <button class="cta-button" onclick="registerEvent('Live Music Evening')">Register Now</button>
+      </div>
+
+      <div class="event-card">
+        <img src="images/work shope.jpeg" alt="Barista Workshop">
+        <h2>Barista Workshop</h2>
+        <p>Date: November 20, 2025</p>
+        <p>Time: 10:00 AM - 12:00 PM</p>
+        <p>Learn the art of brewing the perfect cup.</p>
+        <button class="cta-button" onclick="registerEvent('Barista Workshop')">Register Now</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Gabbi's Coffee Place - Garend City Mall, Kampala</p>
+    <p>Email: gabbiscoffee.org | Tel: +256787334932</p>
+    <div class="social-links">
+      <a href="#">Facebook</a>
+      <a href="#">Instagram</a>
+      <a href="#">Twitter</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

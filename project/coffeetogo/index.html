@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gabbi's Coffee Place</title>
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/large.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="logo">Coffee To GO</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#Events">Events</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#why-us">Why Us</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contacts">contact us</a></li>
+          <li><a href="#newsletter">Newsletter</a></li>
+        </ul>
+        <a href="#menu" class="order-icon" aria-label="Order Now">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+            <path fill="currentColor" d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/>
+          </svg>
+        </a>
+        <div class="menu-toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-slides">
+        <!-- Slide 1 -->
+        <div class="hero-slide">
+            <img src="images/coffee banner .jpg" alt="Coffee" class="hero-img">
+            <div class="hero-overlay">
+                <h2>Empowering Local Businesses</h2>
+                <button onclick="window.location.href='join.html'">Join Us</button>
+            </div>
+        </div>
+        <!-- Slide 2 -->
+        <div class="hero-slide">
+            <img src="images/coffee banner 0.jpg" alt="Uganda Agriculture" class="hero-img">
+            <div class="hero-overlay">
+                <h2>Supporting Agricultural Growth</h2>
+                <button onclick="window.location.href='discover.html'">Learn More</button>
+            </div>
+        </div>
+        <!-- Slide 3 -->
+        <div class="hero-slide">
+            <img src="images/cofee banner 3.jpg" alt="Business Meeting" class="hero-img">
+            <div class="hero-overlay">
+                <h2>Building Professional Networks</h2>
+                <button onclick="window.location.href='directory.html'">Explore</button>
+            </div>
+        </div>
+    </div>
+    <div class="slide-nav">
+        <span class="slide-dot active"></span>
+        <span class="slide-dot"></span>
+        <span class="slide-dot"></span>
+    </div>
+</section>
+  <!-- Coffee Menu Section -->
+  <section id="menu" class="coffee-menu" aria-labelledby="menu-heading">
+    <h2 id="menu-heading" class="section-heading">Our Coffee Menu</h2>
+    <div class="coffee-grid">
+      <!-- Espresso -->
+      <div class="coffee-item">
+        <div class="coffee-card">
+          <div class="coffee-front">
+            <img src="images/espresso-dark-background-steam-rises-coffee-coffee-breakfast-italian-cafe-shop-vertical-shot-selective-focus_166373-2022.jpg" alt="Espresso" />
+            <div class="coffee-info">
+              <h3>Espresso</h3>
+              <span class="price">$3.00</span>
+            </div>
+          </div>
+          <div class="coffee-back">
+            <p>Espresso is the ultimate concentrated coffee—a small, potent shot that packs pure energy and bold, intense flavor into every sip.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cappuccino -->
+      <div class="coffee-item">
+        <div class="coffee-card">
+          <div class="coffee-front">
+            <img src="images/Cappuccino.jpeg" alt="Cappuccino" />
+            <div class="coffee-info">
+              <h3>Cappuccino</h3>
+              <span class="price">$4.00</span>
+            </div>
+          </div>
+          <div class="coffee-back">
+            <p>A perfect blend of espresso, steamed milk, and airy foam for a creamy delight.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Latte -->
+      <div class="coffee-item">
+        <div class="coffee-card">
+          <div class="coffee-front">
+            <img src="images/latte-small.jpg" alt="Latte" />
+            <div class="coffee-info">
+              <h3>Latte</h3>
+              <span class="price">$4.50</span>
+            </div>
+          </div>
+          <div class="coffee-back">
+            <p>A milk-based coffee drink made with espresso and steamed milk, creating a smooth, creamy texture.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Americano -->
+      <div class="coffee-item">
+        <div class="coffee-card">
+          <div class="coffee-front">
+            <img src="images/americano.jpeg" alt="Americano" />
+            <div class="coffee-info">
+              <h3>Americano</h3>
+              <span class="price">$3.50</span>
+            </div>
+          </div>
+          <div class="coffee-back">
+            <p>A shot of espresso diluted with hot water, offering a milder, aromatic coffee.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mocha -->
+      <div class="coffee-item">
+        <div class="coffee-card">
+          <div class="coffee-front">
+            <img src="images/mocha.jpeg" alt="Mocha" />
+            <div class="coffee-info">
+              <h3>Mocha</h3>
+              <span class="price">$5.00</span>
+            </div>
+          </div>
+          <div class="coffee-back">
+            <p>A delicious blend of espresso, steamed milk, and chocolate for a sweet treat.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Macchiato -->
+      <div class="coffee-item">
+        <div class="coffee-card">
+          <div class="coffee-front">
+            <img src="images/Macchiato.jpeg" alt="Macchiato" />
+            <div class="coffee-info">
+              <h3>Macchiato</h3>
+              <span class="price">$4.00</span>
+            </div>
+          </div>
+          <div class="coffee-back">
+            <p>Espresso "stained" with a dollop of frothy milk for a bold yet balanced flavor.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us Section -->
+  <section id="why-us" class="why-us" aria-labelledby="why-us-heading">
+    <h2 id="why-us-heading" class="section-heading">Why Choose Us?</h2>
+    <div class="why-us-grid">
+      <div class="why-us-item">
+        <i class="fas fa-coffee"></i>
+        <h3>Premium Quality Beans</h3>
+        <p>We source our coffee beans from the finest farms around the world.</p>
+      </div>
+      <div class="why-us-item">
+        <i class="fas fa-heart"></i>
+        <h3>Made with Love</h3>
+        <p>Every cup is brewed with care and passion.</p>
+      </div>
+      <div class="why-us-item">
+        <i class="fas fa-leaf"></i>
+        <h3>Eco-Friendly</h3>
+        <p>We are committed to sustainability and eco-friendly practices.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="testimonials" aria-labelledby="testimonials-heading">
+    <h2 id="testimonials-heading" class="section-heading">What Our Customers Say</h2>
+    <div class="testimonials-grid">
+      <div class="testimonial-item">
+        <img src="images/oming.jpg" alt="Customer 1" />
+        <p>"The best coffee I've ever had! The atmosphere is cozy, and the staff is super friendly."</p>
+        <span class="testimonial-name">Oming robin</span>
+      </div>
+      <div class="testimonial-item">
+        <img src="images/shilla.jpg" alt="Customer 2" />
+        <p>"I love their cappuccino! It's always perfectly brewed and served with a smile."</p>
+        <span class="testimonial-name">O apilate </span>
+      </div>
+      <div class="testimonial-item">
+        <img src="images/gowa 2.jpg" alt="Customer 3" />
+        <p>"Gabbi's Coffee Place is my go-to spot for a relaxing coffee break. Highly recommended!"</p>
+        <span class="testimonial-name">— Gowa G</span>
+      </div>
+    </div>
+  </section>
+
+ 
+
+  <!-- Newsletter Section -->
+  <section id="newsletter" class="newsletter" aria-labelledby="newsletter-heading">
+    <h2 id="newsletter-heading" class="section-heading">Subscribe to Our Newsletter</h2>
+    <p>Stay updated with our latest offers, events, and coffee tips!</p>
+    <form class="newsletter-form">
+      <input type="email" placeholder="Enter your email" required />
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 Gabbi's Coffee Place - Garden City Mall, Kampala</p>
+      <p>Email: <a href="mailto:info@gabbiscoffee.org">info@gabbiscoffee.org</a> | Tel: +256787334932</p>
+      <div class="social">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+        <a href="#"><i class="fab fa-tiktok"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
